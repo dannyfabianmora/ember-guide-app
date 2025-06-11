@@ -1,0 +1,16 @@
+{{page-title "Scientists"}}
+<h2>here i'm going to simulate a deposit Request!</h2>
+<h3>First let's test painting date </h3>
+
+<h2>List of Scientists</h2>
+
+<ul>
+  {{#each @model as |scientist|}}
+    <li>{{scientist}}</li>
+  {{/each}}
+</ul>
+{{outlet}}
+<PeopleList
+  @title="List of Model People"
+  @people={{@model}}
+/>
